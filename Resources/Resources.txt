@@ -1,0 +1,27 @@
+https://github.com/entbappy/US-Visa-Approval-Prediction
+
+
+Step 1: Setting Github repo in github
+Step 2: Open an Folder and in That open Git Bash and Clone git repo with the https link, 1) In Bash: git clone GITHUB REPO LINK
+                     2) After clone folder has been created with git file in it. 3) check ls 4) Open the terminal in that folder with git name of the folder created (Check the directiory properly of the folder) 5) Now to open the VS code write [ code .] VS will be open with that folder.
+
+STep 3: Creating Templete for the Project; 
+1) template.py :-- project_name = "us_visa"
+                   start listing the folders we can for that we have flowchats designed for Folder structure
+RUN this template.py in bash --> All the folders will be created in the VS Code [Whenever we want new file or folder we can initilize it in template and re-run template.py from bash]
+
+2) Now Commiting the code from the terminial
+git add .
+git commit -m "folder structure"
+git push origin main
+
+NOW AFTER CHANGEING THE CODE AGAIN WE HAVE TO UPDATE IT INTO GITHUB FOR THAT WE CAN DO IT FROM VS CODE as 3rd option below search in VS code...write update mesage and commit it and sync it the changes will be updated
+
+3) Creating Environment
+
+conda create -n / -c env_name python==version -y
+conda activate env_name
+
+pip list
+(21st Feb 1:50 time)
+[here we got o know that US-Visa package is not installed for that we use -e. it will look for setup.py file and this file will look for constructor file in each and every folder, now if we want to use pipline the find_packages method will see the constructor for each folder wherver it get contructor file then that folder will be consider as local package. ]
