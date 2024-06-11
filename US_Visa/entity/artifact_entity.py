@@ -3,7 +3,7 @@ from us_visa.constants import *
 from dataclasses import dataclass
 from datetime import datetime
 
-TIMESTAMP: str = datetime.now().strftime("%m_%d_%Y_%H_%M_%S") 
+TIMESTAMP: str = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
 
 @dataclass
 class TrainingPipelineConfig:
@@ -75,4 +75,4 @@ class ModelPusherConfig:
 @dataclass
 class USvisaPredictorConfig:
     model_file_path: str = MODEL_FILE_NAME
-    model_bucket_name: str = MODEL_BUCKET_NAME
+    model_bucket_name: str = MODEL_BUCKET_NAME  

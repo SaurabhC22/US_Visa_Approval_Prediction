@@ -2,6 +2,7 @@
 #from US_Visa.logger import logging
 #logging.info("Testing logging file")
 
+''' 
 # CODE FOR TESTING EXCEPTION
 
 from US_Visa.logger import logging
@@ -13,5 +14,13 @@ try:
 except Exception as e:
     logging.info(e)
     raise USvisaException(e,sys) from e
+'''
 
+'''
+## If we want to import from constants then
 
+from US_Visa.constants import *
+
+print('DATABASE_NAME')
+
+'''

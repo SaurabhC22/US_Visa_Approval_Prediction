@@ -25,3 +25,41 @@ conda activate env_name
 pip list
 (21st Feb 1:50 time)
 [here we got o know that US-Visa package is not installed for that we use -e. it will look for setup.py file and this file will look for constructor file in each and every folder, now if we want to use pipline the find_packages method will see the constructor for each folder wherver it get contructor file then that folder will be consider as local package. ]
+
+
+Next Lecture:-
+
+MongoDB Setup-- Login to account--> Create New Project --> Create Clustrer Option (Cluster is Virtual Machine which we are access in cloud) --> Select Free Instance
+Now Connecting to Cluster1 [MainGmail Login:__ Username: saurabhc22 , Password: saurabh09] IP Address setup [We can use 0.0.0.0/0 IP as default so that we can acess it through any system and is we use our syste IP then we can not access it through another system]  
+In Overview section Cluster is made --> Connect to cluster0 Driver: Python Verion: 3.6/later --> On same page we get connection string, Copy That and In VS notebook folder mongodb file paste it
+
+Next is to pushing the data to mongodb cluster with python for that converting csv to dict...Then there is set of code that is used ot push it and after pushing it... In Mongodb-->database -->Browse Collection. 
+
+Logging Expection and Utlity 1:50
+
+Logging: init folder code and test in from demo.py
+
+Exception: init folder code and test it from demo.py	
+
+
+
+26FEB EDA Lecture:-
+
+EDA AND FE In Jupyter notebook
+
+
+28FEB Data Ingesstion Lecture(Pipeline):-
+
+In Data Ingestion there are some of the constant term or files / variables which willthe same for all so that thing we create it into Constants Folder. Constants means basically fix variable nameing like if we want to do some changes then we need to change it into Conatants Folders only No NEED TO CHANGE EVERYWHERE IN THE CODE.	
+Next In Configuration folder making file of mongodb connection file will help u to connect with the MongoDB CLient
+THIS IS FOR THE MODULAR CODING OF mongoDB Jupyter notebook file..... Connecting with the Client
+
+Next we have store the data into MongoDB in Json format for that thing we are writing logic in data_access --> init file and mongo_db_connection file
+
+Next In flowchart we have Data Inges Config where we have to return the actual path. For that we have entity folder inside that we have config enetity.
+
+Major Flow is Like:- Constants, config_entity, artifact_entity, components, pipeline, app.py
+
+WORKFLOW OF MODULAR CODING:-
+Data Ingestion will return artificat as Test.csv and Train.csv
+Which will go next to the Data Validation after validating if its  TRUE data then it will go to Transformation and Data Will be Transformed and as a ouput we will get Cleaned Data File. And This Cleaned data will be puh to Model Trainer. and Model then will go in For Mode Evaluation from thi we will get an ouput as METRIC thent he Pusher set will Puh it to S3 Buket.
